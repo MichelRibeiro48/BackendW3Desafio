@@ -18,7 +18,7 @@ class User(db.Model):
     age = db.Column(db.Integer, nullable=False)
 
     def to_json(self):
-        return {"rg": self.rg, "name": self.name, "email": self.email,"password": self.password, "cpf": self.cpf, "age": self.age}
+        return {"rg": self.rg, "name": self.name, "email": self.email, "cpf": self.cpf, "age": self.age}
 
 def func_response(status, content_name, content, message=False):
     body = {}
